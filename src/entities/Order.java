@@ -2,9 +2,9 @@ package entities;
 
 public class Order {
     private String orderFree;
-    private int load;
+    private Load load;
 
-    public Order(String orderFree, int load) {
+    public Order(String orderFree, Load load) {
         this.orderFree = orderFree;
         this.load = load;
     }
@@ -17,11 +17,11 @@ public class Order {
         this.orderFree = orderFree;
     }
 
-    public int getLoad() {
+    public Load getLoad() {
         return load;
     }
 
-    public void setLoad(int load) {
+    public void setLoad(Load load) {
         this.load = load;
     }
 }

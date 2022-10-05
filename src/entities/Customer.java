@@ -2,9 +2,9 @@ package entities;
 
 public class Customer {
     private String customerName;
-    private String order;
+    private Order order;
 
-    public Customer(String customerName, String order) {
+    public Customer(String customerName, Order order) {
         this.customerName = customerName;
         this.order = order;
     }
@@ -17,11 +17,11 @@ public class Customer {
         this.customerName = customerName;
     }
 
-    public String getOrder() {
+    public Order getOrder() {
         return order;
     }
 
-    public void setOrder(String order) {
+    public void setOrder(Order order) {
         this.order = order;
     }
 }

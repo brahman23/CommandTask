@@ -1,12 +1,12 @@
 package entities;
 
 public class Load {
-    private double height;
-    private double widht;
+    private int height;
+    private int widht;
     private double lenght;
-    private double wight;
+    private int wight;
 
-    public Load(double height, double widht, double wight, double lenght) {
+    public Load(int height, int widht, int wight, double lenght) {
         this.height = height;
         this.widht = widht;
         this.lenght = lenght;
@@ -25,23 +25,23 @@ public class Load {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 
-    public double getWidht() {
+    public int getWidht() {
         return widht;
     }
 
-    public void setWidht(double widht) {
+    public void setWidht(int widht) {
         this.widht = widht;
     }
 
-    public double getWight() {
+    public int getWight() {
         return wight;
     }
 
-    public void setWight(double wight) {
+    public void setWight(int wight) {
         this.wight = wight;
     }
 }

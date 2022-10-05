@@ -4,7 +4,7 @@ public class Load {
     private int height;
     private int widht;
     private double lenght;
-    private int wight;
+    private double wight;
 
     public Load(int height, int widht, int wight, double lenght) {
         this.height = height;
@@ -37,11 +37,11 @@ public class Load {
         this.widht = widht;
     }
 
-    public int getWight() {
+    public double getWight() {
         return wight;
     }
 
-    public void setWight(int wight) {
+    public void setWight(double wight) {
         this.wight = wight;
     }
 }

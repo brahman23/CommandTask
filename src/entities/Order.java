@@ -24,4 +24,8 @@ public class Order {
     public void setLoad(Load load) {
         this.load = load;
     }
+
+
+    public int getOrderFee() {
+    }
 }

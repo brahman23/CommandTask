@@ -24,4 +24,8 @@ public class Customer {
     public void setOrder(Order order) {
         this.order = order;
     }
+
+
+    public Order[] getOrders() {
+    }
 }

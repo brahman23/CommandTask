@@ -26,6 +26,8 @@ public class Customer {
     }
 
 
-    public Order[] getOrders() {
+    @Override
+    public String toString() {
+        return "\n\ncustomerName: " + customerName + '\'';
     }
 }

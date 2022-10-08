@@ -1,20 +1,20 @@
 package entities;
 
 public class Order {
-    private String orderFree;
+    private int orderFee;
     private Load load;
 
-    public Order(String orderFree, Load load) {
-        this.orderFree = orderFree;
+    public Order(int orderFee, Load load) {
+        this.orderFee = orderFee;
         this.load = load;
     }
 
-    public String getOrderFree() {
-        return orderFree;
+    public int  getOrderFee() {
+        return orderFee;
     }
 
-    public void setOrderFree(String orderFree) {
-        this.orderFree = orderFree;
+    public void setOrderFee(int orderFee) {
+        this.orderFee = orderFee;
     }
 
     public Load getLoad() {
@@ -25,7 +25,10 @@ public class Order {
         this.load = load;
     }
 
-
-    public int getOrderFee() {
+    @Override
+    public String toString() {
+        return "\nOrder: " +
+                "orderFee: " + orderFee +
+                ", load: " + load ;
     }
 }

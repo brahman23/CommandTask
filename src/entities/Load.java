@@ -44,4 +44,13 @@ public class Load {
     public void setWight(double wight) {
         this.wight = wight;
     }
+
+    @Override
+    public String toString() {
+        return "\nLoad: " +
+                "\nheight: " + height +
+                ", \nwidht: " + widht +
+                ", \nlenght: " + lenght +
+                ", \nwight: " + wight;
+    }
 }

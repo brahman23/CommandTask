@@ -8,6 +8,20 @@ import java.util.ArrayList;
 
 public class DeliveryCompanyService {
     private ArrayList<DeliveryCompany> deliveryCompanies;
+
+
+
+
+    public void acceptOrder(Order order){
+        for (DeliveryCompany d:deliveryCompanies) {
+            if (d.getMaxCapacityPerSquareSantimeter()>=(order.getLoad().getHeight()*order.getLoad().getWidht()*order.getLoad().getLenght())){
+                d.setOrder(order);
+                System.out.println(d);
+            }else {
+                System.out.println("Bul load chon, batpait ");
+            }
+        }
+    }
     public void createDeliveryCompany(String deliveryCompanyName ) {
         DeliveryCompany deliveryCompany = new DeliveryCompany(deliveryCompanyName);
         deliveryCompanies.add(deliveryCompany);
